@@ -23,3 +23,8 @@
 - Colores
 - Tipografías
 
+
+Ariel Muslera
+Con más de 20 años de experiencia invirtiendo, asesiorando y creando productos y startups de tecnología y blockchain/crypto, Ariel sabe suficiente de tecnología como para meterse en problemas. Su objetivo para el curso de Full Stack es aprender a programar lo suficientemente bien como para poder ser un mejor Product Owner, qeue es en definitiva lo que suele hacer, "tocando de oído". 
+Ariel pasa su tiempo entre el sur de California y Buenos Aires junto a su familia ensamblada (su mujer y 4 hijas entre ambos con edades de 12 a 16, y en sus ratos libres intenta tocar el bajo y jugar al ajedrez.
+
