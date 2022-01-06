@@ -34,3 +34,7 @@ Estudiante de Diseño Multimedia y de Interacción, en busca de mejorar su perfi
 Ezequiel Romera
 Con amplia experiencia como PM en proyectos de Tecnología, Marketing y Comunicación, dio sus primeros pasos en una multinacional de telecomunicaciones donde se desarrolló en diferentes áreas durante casi diez años. Es instructor con experiencia en inducción de personal, atención al cliente, gestión de reclamos y manejo de sistemas. Cuenta con experiencia en creación de contenidos, análisis y mejora de procesos, planificación de acciones de MKT y coordinación de equipos de trabajo. Fotógrafo y Techie por naturaleza.
 
+Federico Alvarez
+Actualmente emprendiendo su camino de aprendizaje en la programación. Tiene experiencia en logística, habiendo trabajado específicamente en disposición de materiales e implementación de nuevos proyectos en el rubro automotriz, y más recientemente en el rubro de los seguros, trabajando en una productora de ART. 
+Es un apasionado por resolver problemas y trabajar en equipo, y cree que la programación brinda las herramientas necesarias para hacerlo. 
+Su destino preferido es la montaña, especialmente cuando hay nieve. 
