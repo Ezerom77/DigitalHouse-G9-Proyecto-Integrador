@@ -31,3 +31,6 @@ Ariel pasa su tiempo entre el sur de California y Buenos Aires junto a su famili
 Valentina de Sousa
 Estudiante de Diseño Multimedia y de Interacción, en busca de mejorar su perfil profesional complementándolo con programación. Entusiasta del aprendizaje y del perfeccionamiento, intentando superarse a si misma de manera continua y enfrentándose a nuevos desafíos. Teniendo 20 años de edad vive en la Ciudad Autónoma de Buenos Aires y está intentando conseguir los medios para independizarse. Pasa la mayor parte de su tiempo con música de fondo. 
 
+Ezequiel Romera
+Con amplia experiencia como PM en proyectos de Tecnología, Marketing y Comunicación, dio sus primeros pasos en una multinacional de telecomunicaciones donde se desarrolló en diferentes áreas durante casi diez años. Es instructor con experiencia en inducción de personal, atención al cliente, gestión de reclamos y manejo de sistemas. Cuenta con experiencia en creación de contenidos, análisis y mejora de procesos, planificación de acciones de MKT y coordinación de equipos de trabajo. Fotógrafo y Techie por naturaleza.
+
