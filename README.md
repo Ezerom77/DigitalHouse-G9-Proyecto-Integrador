@@ -1,45 +1,67 @@
 # DigitalHouse-G9-Proyecto-Integrador
 
-## _Requisitos/Entregables obligatorios_
 
-1 - Crear Trello – OK
-2 - Crear repositorio remoto publico de grupo y enviar el link del mismo al cuerpo docente.
-3 - El archivo README.md del repositorio del grupo debe contener:
-- Temática y descripción del sitio
-- Publico objetivo
-- Listado de 5 páginas referentes en las que se basa su proyecto
-- Listado del grupo con una breve descripción de cada uno - CADA UNO POR SU CUENTA ANTES DEL   JUEVES
-- Link del tablero de trabajo en donde se encuentran trabajando - YA ESTA
+### Temática y descripción del sitio:
 
-4 - El archivo README.md del repositorio del grupo debe contener:
-- Home o Página de inicio - AM prepara algo y comparte antes del jueves
-- Detalle de un producto - AM prepara algo y comparte antes del jueves
-- Carrito de compras
-- Formulario de registro
-- Formulario de login
-
-## Requisitos/Entregables opcionales
-- Logo
-- Colores
-- Tipografías
+# Clessidra 
+  ### Plataforma de compra - venta de indumentaria usada con precio dinámico.
+Las publicaciones se realizan con un valor de seguridad (valor mínimo de venta), Stock y un precio inicial de publicación. En función del plazo de publicación elegido, el precio del producto se reduce por intervalos de vencimiento hasta agotar el stock o alcanzar el precio mínimo. En todo momento, el comprador ve el precio actual y, en caso de que le parezca adecuado, simplemente lo agrega al carrito de compras. En el carrito, el comprador tendrá un tiempo predefinido (5 o 10 minutos) para realizar la compra al precio seleccionado. En caso que no se complete el checkout a tiempo, se liberará el stock del producto y, si corresponde, se actualizará el precio. El comprador en este caso tendrá que volver a agregar el producto al carrito con el nuevo precio (asumiendo que siga en stock).   
+Esperamos que este modelo genere mayores ingresos para el vendedor, y el comprador pagará lo que considere un precio justo por el producto.  
+La plataforma mostrará a los usuarios compradores el producto, precio, stock y vencimiento, priorizando los productos que más se ajusten a las preferencias indicadas por el usuarios luego del proceso de registro.  
+Los productos publicados podrán filtrarse por su categoría y características (rango de precios, talles, etc) así como también podrán ser compartidos en las redes sociales del usuario que los visite.
 
 
 
+### Publico objetivo
+#### Usuario comprador:
+Es de cualquier sexo, tiene entre 16 y 35 años.
+No eligen la moda convencional, siguen marcas e influencers para crear un estilo más único.
+Son buscadores de ofertas y oportunidades especiales, recorren plataformas locales y del exterior buscando el producto único y el mejor precio, compran eventualmente en tiendas físicas de ropa usada pero son consumidores activos de plataformas online.
 
-### Ariel Muslera
-Con más de 20 años de experiencia invirtiendo, asesiorando y creando productos y startups de tecnología y blockchain/crypto, Ariel sabe suficiente de tecnología como para meterse en problemas. Su objetivo para el curso de Full Stack es aprender a programar lo suficientemente bien como para poder ser un mejor Product Owner, qeue es en definitiva lo que suele hacer, "tocando de oído". 
-Ariel pasa su tiempo entre el sur de California y Buenos Aires junto a su familia ensamblada (su mujer y 4 hijas entre ambos con edades de 12 a 16, y en sus ratos libres intenta tocar el bajo y jugar al ajedrez.
+2do perfil. Sexo femenino, tiene 27 años.
 
-### Valentina de Sousa
-Estudiante de Diseño Multimedia y de Interacción, en busca de mejorar su perfil profesional complementándolo con programación. Entusiasta del aprendizaje y del perfeccionamiento, intentando superarse a si misma de manera continua y enfrentándose a nuevos desafíos. Teniendo 20 años de edad vive en la Ciudad Autónoma de Buenos Aires y está intentando conseguir los medios para independizarse. Pasa la mayor parte de su tiempo con música de fondo. 
+Su profesión es psicóloga, elige un tipo de moda elegante y tiene tendencia hacia los colores primarios y oscuros.
+Busca la comodidad y la facilidad de la rapidez para encontrar
+la indumentaria  que busca para trabajar en su consultorio.
 
-### Ezequiel Romera
-Con amplia experiencia como PM en proyectos de Tecnología, Marketing y Comunicación, dio sus primeros pasos en una multinacional de telecomunicaciones donde se desarrolló en diferentes áreas durante casi diez años. Es instructor con experiencia en inducción de personal, atención al cliente, gestión de reclamos y manejo de sistemas. Cuenta con experiencia en creación de contenidos, análisis y mejora de procesos, planificación de acciones de MKT y coordinación de equipos de trabajo. Fotógrafo y Techie por naturaleza.
+3er perfil.  Sexo masculino, 30 años.
+Su profesión es médico, elige un estilo casual para cuando sale
+del trabajo, elegí esta marca por la rapidez en llegar a su domicilio
+y por la facilidad de compra.
 
-### Federico Alvarez
-Actualmente emprendiendo su camino de aprendizaje en la programación. Tiene experiencia en logística, habiendo trabajado específicamente en disposición de materiales e implementación de nuevos proyectos en el rubro automotriz, y más recientemente en el rubro de los seguros, trabajando en una productora de ART. 
+
+#### Usuario vendedor:
+Al igual que el comprador, es de cualquier sexo, tiene entre 16 y 35 años, suelen renovar su ropa en cada temporada y valoran la posibilidad de capitalizar esa inversión con su venta.
+Cuidan y clasifican las prendas considerando su precio de reventa, son consumidores habituales de plataformas de compra-venta (Mercadolibre / Facebook Marketplace, etc) 
+
+### _Entregables_
+
+- Trello:  [link](https://trello.com/b/U0KKKwLH/sprint-1)
+
+- Wireframe: [link](https://docs.google.com/document/d/1Nh3B69B8pRmIlqqlk8LqYluNqfNn_-1V7ZY9Qea7bp0/edit?usp=sharing)
+
+- Páginas referentes:
+1. [Catawiki](https://www.catawiki.com/es/c/597-ropa)
+2. [Renovatuvestidor](https://www.renovatuvestidor.com/home)
+3. [Juanperez](https://www.juanperez.com.ar)
+4. [Closeando](https://closeando.com)
+6. [Somoscocoliche](https://www.somoscocoliche.com)
+
+- Paleta de colores:  [link](https://coolors.co/ee964b-fbfbff-d65780-000000)
+
+### Integrantes:
+
+#### Ariel Muslera
+*Con más de 20 años de experiencia invirtiendo, asesiorando y creando productos y startups de tecnología y blockchain/crypto, Ariel sabe suficiente de tecnología como para meterse en problemas. Su objetivo para el curso de Full Stack es aprender a programar lo suficientemente bien como para poder ser un mejor Product Owner, qeue es en definitiva lo que suele hacer, "tocando de oído". 
+Ariel pasa su tiempo entre el sur de California y Buenos Aires junto a su familia ensamblada (su mujer y 4 hijas entre ambos con edades de 12 a 16, y en sus ratos libres intenta tocar el bajo y jugar al ajedrez.*
+
+#### Valentina de Sousa
+*Estudiante de Diseño Multimedia y de Interacción, en busca de mejorar su perfil profesional complementándolo con programación. Entusiasta del aprendizaje y del perfeccionamiento, intentando superarse a si misma de manera continua y enfrentándose a nuevos desafíos. Teniendo 20 años de edad vive en la Ciudad Autónoma de Buenos Aires y está intentando conseguir los medios para independizarse. Pasa la mayor parte de su tiempo con música de fondo.*
+
+#### Ezequiel Romera
+*Con amplia experiencia como PM en proyectos de Tecnología, Marketing y Comunicación, dio sus primeros pasos en una multinacional de telecomunicaciones donde se desarrolló en diferentes áreas durante casi diez años. Es instructor con experiencia en inducción de personal, atención al cliente, gestión de reclamos y manejo de sistemas. Cuenta con experiencia en creación de contenidos, análisis y mejora de procesos, planificación de acciones de MKT y coordinación de equipos de trabajo. Fotógrafo y Techie por naturaleza.*
+
+#### Federico Alvarez
+*Actualmente emprendiendo su camino de aprendizaje en la programación. Tiene experiencia en logística, habiendo trabajado específicamente en disposición de materiales e implementación de nuevos proyectos en el rubro automotriz, y más recientemente en el rubro de los seguros, trabajando en una productora de ART. 
 Es un apasionado por resolver problemas y trabajar en equipo, y cree que la programación brinda las herramientas necesarias para hacerlo. 
-Su destino preferido es la montaña, especialmente cuando hay nieve. 
-
-### Rocio Suarez
-Estudiante de programación. Por medio de la programación vi una forma de profundizar ideas asociadas con temas artísticos, haciendo de esto una oportunidad de negocio, pocas personas hacen esto en esta área. Iniciando así el aprendizaje en un curso de frontend pero para el mundo competitivo siempre se requiere más, por lo que empecé full-stack y para estar apta para el mercado.
+Su destino preferido es la montaña, especialmente cuando hay nieve.* 
