@@ -38,7 +38,7 @@ Cuidan y clasifican las prendas considerando su precio de reventa, son consumido
 
 - Trello:  [link](https://trello.com/b/U0KKKwLH/sprint-1)
 
-- Wireframe: [link](https://docs.google.com/document/d/1Nh3B69B8pRmIlqqlk8LqYluNqfNn_-1V7ZY9Qea7bp0/edit?usp=sharing)
+- Wireframe: [link](https://drive.google.com/file/d/1ti_oavMh0R0u2lfFfm_bwNSz8EPGsros/view?usp=sharing)
 
 - Páginas referentes:
 1. [Catawiki](https://www.catawiki.com/es/c/597-ropa)
