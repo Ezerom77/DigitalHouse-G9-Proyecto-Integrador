@@ -1,0 +1,23 @@
+{
+  "name": "digitalhouse-g9-proyecto-integrador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezerom77/DigitalHouse-G9-Proyecto-Integrador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ezerom77/DigitalHouse-G9-Proyecto-Integrador/issues"
+  },
+  "homepage": "https://github.com/Ezerom77/DigitalHouse-G9-Proyecto-Integrador#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
