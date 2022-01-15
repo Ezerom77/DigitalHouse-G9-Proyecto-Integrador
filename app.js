@@ -13,3 +13,16 @@ app.use(express.static(path.join(__dirname, "./public")));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/index.html"));
 });
+
+app.get("/registro", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/registro.html"));
+});
+
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/login.html"));
+});
+
+app.get("/perfil", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/perfil.html"));
+});
+
