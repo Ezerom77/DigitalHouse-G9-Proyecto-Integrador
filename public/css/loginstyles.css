@@ -142,7 +142,7 @@ body {
 }
 
 .line-separator {
-  background-color: #ccc;
+  background-color: darkgray;
   flex-grow: 5;
   height: 1px
 }
@@ -153,6 +153,12 @@ body {
   text-align: center
 }
 
+.or-seperator i {
+  padding: 0 10px;
+  background: #f7f7f7;
+  position: relative;
+  top: -11px;
+  z-index: 1;
 
 
 
