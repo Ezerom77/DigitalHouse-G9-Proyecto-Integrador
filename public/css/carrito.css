@@ -1,0 +1,24 @@
+#logo{
+    width: 200px;
+    height: 200px;
+    background-color: #D65780;
+}
+header{
+    background-color: #D65780 ;
+
+}
+h1{
+    color: white;
+    background-color: black;
+}
+.barraDeNavegacion{
+    background-color:#D65780 ;
+    color: black ;
+}
+.nav-item{
+    color: black
+}
+.fotoProducto{
+    width: 400px;
+    height: 500px;
+}
