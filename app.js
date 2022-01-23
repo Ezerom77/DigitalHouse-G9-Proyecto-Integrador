@@ -29,9 +29,11 @@ app.get("/carrito", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/carrito.html"));
 });
 
-
-
 app.get("/login2", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/login2.html"));
+});
+
+app.get("/product", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/product.html"));
 });
 
