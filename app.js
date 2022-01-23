@@ -34,6 +34,6 @@ app.get("/login2", (req, res) => {
 });
 
 app.get("/product", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/product.html"));
+  res.sendFile(path.join(__dirname, "./views/productDetail.html"));
 });
 
