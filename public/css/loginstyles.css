@@ -191,7 +191,7 @@ body {
   z-index: 1;
 
 
-#social-login button{
+.social-login button{
   display: flex;
   min-width: 600px;
 }
