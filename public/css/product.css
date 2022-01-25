@@ -39,7 +39,12 @@
 .fashion {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+}
+
+.fashion h3{
+     color: #6c6161;
+    font-weight: 700;
 }
 
 .input_text {
