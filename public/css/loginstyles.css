@@ -11,6 +11,17 @@ body {
   background-color: white;
 }
 
+.logo{
+    height: auto;
+    font-family: 'Lato', sans-serif;
+    color: #6c6161;
+    font-weight: 300;
+    display: block;
+    font-size: 1.5em;
+    
+}
+
+
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -140,6 +151,25 @@ body {
   line-height: 23px
 }
 
+.btn-enviar{
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ee964b;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #d65780
+}
+.btn-enviar:hover{
+  background-color: #000000;
+
+}
+
+
+font-size: 13px;
+
+
 .heading {
   font-size: 21px
 }
@@ -203,4 +233,12 @@ body {
 
 .pass-form{
   margin: none;
+}
+
+
+
+.logo-text h3{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Lato', sans-serif;
+  background-color: #ee964b;
 }
