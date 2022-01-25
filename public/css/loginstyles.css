@@ -4,22 +4,107 @@ body {
 }
 
 body {
-  display: flex;
-  align-items: flex-start;
+  display: block;
+  align-items:stretch;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: white;
 }
 
-.logo{
+
+
+header nav{
+  display: none;
+  /*hay que revisar bien la barra de navegacion universal
+  teniendo en cuenta los tamaños de pantalla. Por ahora, 
+  la mantengo oculta. */
+  align-content:stretch;
+  padding-top: 15px;
+}
+
+header nav ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+  gap: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #c5c5c5;
+  margin-left: 0px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+header nav li{
+  padding: 0px 10px;
+}
+
+header nav li.carrito{
+  color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav li.carrito i{
+  padding-right: 5px;
+  margin: 0px;
+}
+
+div.logo{
     height: auto;
     font-family: 'Lato', sans-serif;
     color: #6c6161;
     font-weight: 300;
     display: block;
     font-size: 1.5em;
+    margin: 0px 30px 20px 30px;
+    border-bottom: #c5c5c5 solid 2px;
     
 }
+
+.search-box{
+  display: none;
+}
+
+header nav div{
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+header nav div i{
+  padding-left: 5px;
+}
+
+header nav div input[type="text"]{
+  height: 20px;
+  padding: none;
+  border: none;
+  justify-content: end;
+  gap: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #c5c5c5;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 1px solid #ee964b;
+  transition: all 0.5s
+}
+
+
+header nav div input:focus {
+  border-bottom: 1px solid #d65780 !important
+}
+
+header nav div input:focus~i {
+  color: #d65780 !important
+}
+
+
+
 
 
 .form-signin {
