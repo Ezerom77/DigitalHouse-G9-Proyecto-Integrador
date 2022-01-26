@@ -6,145 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Carrito </title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link  rel="stylesheet" href="css/carrito.css"> </link>
 </head>
 <body>
+    
     <header>
-        <nav class="navbar navbar-light" style="background-color: #D65780;">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src=".\img\clessidra logomomentaneo.png" alt="" width="100" height="85">
-              </a>
+       
+        <div class="topNavBar">
+            <h2>CLESSIDRA</h2>
+            <div class="input_text">
+              <input type="text" placeholder="Buscar">
+              <i class="fa fa-search"></i>
             </div>
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Productos </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Contacto </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-            </ul>
           </div>
-        </nav>
-    </nav>
-
+            <div class="bottomNavBar">
+                <ul class="bottomNav">
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Vendedores</a></li>
+                <li><a href="#">Wishlist <i class="fas fa-heart"></i></a></li>
+                <li><a href="#">Carrito <i class="fa fa-shopping-bag"></i></a></li>
+              </span>
+            </ul>
+            </div>
     </header>
     <main>
-        <div style="margin-bottom: 2rem; background-color: black;">
-            <h1>Carrito</h1>
-          </div>
-          <div data-block-name="woocommerce/cart" class="wp-block-woocommerce-cart"><div class="with-scroll-to-top__scroll-point" aria-hidden="true"></div>
-          <div class="">
-              <div class="" aria-hidden="false">
-                  <div>
-                      <iframe src="about:blank" aria-hidden="true" tabindex="-1" frameborder="0" style="display: block; opacity: 0; position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;"></iframe>
-                    <div class="wc-block-components-main wc-block-cart__main wp-block-woocommerce-cart-items-block">
-                        <table class="wc-block-cart-items wp-block-woocommerce-cart-line-items-block" tabindex="-1">
-                            <thead>
-                                <tr class="wc-block-cart-items__header">
-                                    <th class="wc-block-cart-items__header-image"><span>Producto</span></th>
-                                    <th class="wc-block-cart-items__header-product"><span>Detalles</span></th>
-                                    <th class="wc-block-cart-items__header-total"><span>Total</span></th>
-                                </tr></thead>
-                                <tbody>
-                                    <tr class="wc-block-cart-items__row" tabindex="-1">
-                                        <td class="wc-block-cart-item__image" aria-hidden="true">
-                                            <img class="fotoProducto" src=".\img\remera-carrito.jpg" alt="Remera rayada> 
-                                        </tr>                                        <td class="wc-block-cart-item__product">
-                                            <a class="wc-block-components-product-name" href="#">New leaf</a>
-                                            <div class="wc-block-cart-item__prices">
-                                                <span class="price wc-block-components-product-price">
-                                                    <span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-product-price__value">$1,250</span>
-                                                </span>
-                                            </div>
-                                            <div class="wc-block-components-product-metadata">
-                                                <div class="descripcion">
-                                                    <p>Remera de algodon a rayas </p>
-          </div></div>
-          <div class="wc-block-cart-item__quantity">
-              <div class="wc-block-components-quantity-selector">
-                  <input class="wc-block-components-quantity-selector__input" type="number" step="1" min="0" aria-label="Cantidad de New leaf en tu carrito." value="1"><button aria-label="Reducir cantidad" class="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--minus" disabled="">－</button>
-                  <button aria-label="Aumentar cantidad" class="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--plus">＋</button></div><button class="wc-block-cart-item__remove-link">Eliminar artículo</button>
-                </div></td>
-                <td class="wc-block-cart-item__total">
-                    <div class="wc-block-cart-item__total-price-and-sale-badge-wrapper">
-                        <span class="price wc-block-components-product-price">
-                            <span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-product-price__value">$1,250</span></span>
-                        </div></td></tr></tbody></table></div>
-                        <div class="wc-block-components-sidebar wc-block-cart__sidebar wp-block-woocommerce-cart-totals-block">
-                            <div class="wp-block-woocommerce-cart-order-summary-block">
-                                <h2 class="wc-block-components-title wc-block-cart__totals-title">Totales del carrito</h2>
-                                <div class="wc-block-components-totals-wrapper">
-                                    <div class="wc-block-components-totals-item">
-                                        <span class="wc-block-components-totals-item__label">Subtotal</span>
-                                        <span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-totals-item__value">$1,250</span>
-                                    <div class="wc-block-components-totals-item__description"></div></div></div>
-                                    <div class="wc-block-components-totals-wrapper">
-                                        <div class="wc-block-components-totals-coupon wc-block-components-panel"><div>
-                                            <button aria-expanded="false" class="wc-block-components-panel__button">
-                                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" class="wc-block-components-panel__button-icon" role="img" focusable="false">
-                                                    <path d="M17 9.4L12 14 7 9.4l-1 1.2 6 5.4 6-5.4z"></path></svg>
-                                                    <span aria-hidden="true">Código del cupón</span>
-                                                    <span class="screen-reader-text">Aplica un código de cupón</span></button></div></div></div>
-                                                    <div class="wc-block-components-totals-wrapper">
-                                                        <div class="wc-block-components-totals-shipping">
-                                                            <div class="wc-block-components-totals-item">
-                                                                <span class="wc-block-components-totals-item__label">Envío</span>
-                                                                <span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-totals-item__value">$420</span>
-                                                                <div class="wc-block-components-totals-item__description"><div class="wc-block-components-totals-item__description wc-block-components-totals-shipping__via">a través de Precio fijo</div>
-                                                                <span class="wc-block-components-shipping-address">Enviar a Buenos Aires, Argentina </span>
-                                                                <button class="wc-block-components-totals-shipping__change-address-button" aria-expanded="false">(cambiar dirección)</button></div></div>
-                                                                <fieldset class="wc-block-components-totals-shipping__fieldset">
-                                                                    <legend class="screen-reader-text">Opciones de envío</legend>
-                                                                    <div class="">
-                                                                        <div class="" aria-hidden="false">
-                                                                            <div class="wc-block-components-shipping-rates-control wc-block-components-totals-shipping__options">
-                                                                                <div class="wc-block-components-shipping-rates-control__package wc-block-components-panel">
-                                                                                    <div>
-                                                                                        <button aria-expanded="true" class="wc-block-components-panel__button">
-                                                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" class="wc-block-components-panel__button-icon" role="img" focusable="false">
-                                                                                                <path d="M12 8l-6 5.4 1 1.2 5-4.6 5 4.6 1-1.2z"></path></svg>
-                                                                                                <div class="wc-block-components-shipping-rates-control__package-title">Método de envío</div></button></div>
-                                                                                                <div class="wc-block-components-panel__content">
-                                                                                                    <div class="wc-block-components-radio-control">
-                                                                                                        <label class="wc-block-components-radio-control__option wc-block-components-radio-control__option-checked" for="radio-control-0-flat_rate:1">
-                                                                                                            <input id="radio-control-0-flat_rate:1" class="wc-block-components-radio-control__input" type="radio" name="radio-control-0" aria-describedby="radio-control-0-flat_rate:1__label radio-control-0-flat_rate:1__description" value="flat_rate:1" checked="">
-                                                                                                            <div class="wc-block-components-radio-control__option-layout">
-                                                                                                                <div class="wc-block-components-radio-control__label-group">
-                                                                                                                    <span id="radio-control-0-flat_rate:1__label" class="wc-block-components-radio-control__label">Precio fijo</span></div>
-                                                                                                                    <div class="wc-block-components-radio-control__description-group">
-                                                                                                                        <span id="radio-control-0-flat_rate:1__description" class="wc-block-components-radio-control__description">
-                                                                                                                            <span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount">$420</span></span></div></div></label>
-                                                                                                                            <label class="wc-block-components-radio-control__option" for="radio-control-0-local_pickup:7">
-                                                                                                                                <input id="radio-control-0-local_pickup:7" class="wc-block-components-radio-control__input" type="radio" name="radio-control-0" aria-describedby="radio-control-0-local_pickup:7__label radio-control-0-local_pickup:7__description" value="local_pickup:7">
-                                                                                                                                <div class="wc-block-components-radio-control__option-layout">
-                                                                                                                                    <div class="wc-block-components-radio-control__label-group">
-                                                                                                                                        <span id="radio-control-0-local_pickup:7__label" class="wc-block-components-radio-control__label">Recogida local</span></div>
-                                                                                                                                        <div class="wc-block-components-radio-control__description-group">
-                                                                                                                                            <span id="radio-control-0-local_pickup:7__description" class="wc-block-components-radio-control__description">
-                                                                                                                                                <span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount">$0</span></span></div></div></label></div></div></div></div></div></div></fieldset></div></div>
-                                                                                                                                                <div class="wc-block-components-totals-wrapper">
-                                                                                                                                                    <div class="wc-block-components-totals-item wc-block-components-totals-footer-item">
-                                                                                                                                                        <span class="wc-block-components-totals-item__label">Total</span>
-                                                                                                                                                        <span class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-components-totals-item__value">$1,670</span>
-                                                                                                                                                        <div class="wc-block-components-totals-item__description"></div></div></div></div>
-                                                                                                                                                        <div class="wc-block-cart__payment-options wp-block-woocommerce-cart-express-payment-block"></div>
-                                                                                                                                                        <div class="wc-block-cart__submit wp-block-woocommerce-proceed-to-checkout-block">
-                                                                                                                                                            <div aria-hidden="true" style="inset: 0px; opacity: 0; pointer-events: none; position: absolute; z-index: -1;"></div>
-                                                                                                                                                            <div class="wc-block-cart__submit-container">
-                                                                                                                                                                <a href="https://artemisavlack.com/shop/finalizar-compra/" class="components-button wc-block-components-button wc-block-cart__submit-button"><span class="wc-block-components-button__text">Finalizar compra</span></a></div></div></div></div></div></div><div style="display: none;"></div><div class="components-snackbar-list wc-block-components-notices__snackbar"></div></div>
+                                                                                                                                                    <a href="https://artemisavlack.com/shop/finalizar-compra/" class="components-button wc-block-components-button wc-block-cart__submit-button"><span class="wc-block-components-button__text">Finalizar compra</span></a></div></div></div></div></div></div><div style="display: none;"></div><div class="components-snackbar-list wc-block-components-notices__snackbar"></div></div>
     </main>
     
 </body>
