@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+/*///////////////////////////////   HEADER   ///////////////////////////////*/
+.header {
+    margin: auto;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #6c6161;
+}
+
+/*///////////////////////////////   Header Top   ///////////////////////////////*/
+.header-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.top-left {
+    padding: 5px;
+}
+
+.logo {
+    padding: 10px 0;
+    
+}
+
+.logo a {
+    text-decoration: none;
+    align-self: center;
+    color: #6c6161;
+    font-weight: 700;
+}
+
+.logo:hover a {
+    color: #D54780;
+}
+
+.searchbox {
+    position: relative;
+    width: 180px;
+}
+
+.searchbox input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: 0;
+    padding-left: 25px;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid #ee964b;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+
+.fa-search {
+    position: absolute;
+    left: 0;
+    color: #b7b7b7;
+    top: 11px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.top-right {
+    text-align: right;
+    padding: 5px;
+}
+
+.top-right .nav-links {
+    padding: 0;
+}
+
+.top-right .nav-links li {
+    padding: 10px 0;
+}
+
+.top-right a {
+    padding-right: 5px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-weight: 700;
+    color: #6c6161;
+    text-decoration: none;
+}
+
+ul li:hover a {
+    color: #D54780;
+}
+
+ul li a i {
+    padding-left: 5px;
+}
+
+/*///////////////////////////////   Header Bottom   ///////////////////////////////*/
+.header-bottom{
+    padding: 20px 5px;
+}
+
+.site-nav ul.nav-links {
+    display: none;
+}
+
+.site-nav ul li a {
+    padding: 5px;
+    color: #c5c5c5;
+}
+
+.site-nav ul li:hover a {
+    color: #D54780;
+}
+
+.burger-menu {
+    background: #ee964b;
+    border: #D54780 solid 1px;
+    font-size: 20px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/*///////////////////////////////   MAIN   ///////////////////////////////*/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: #fff;
+    width: 90vw;
+    padding: 20px 0;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px #6c6161;
+}
+
+h3.title {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 20px;    
+}
+
+p.howto {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    width: 60%;
+    margin: 10px;
+    box-shadow: 0px 0px 10px #6c6161;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button:hover {
+    color: rgb(0, 0, 0);
+}
+
+.carousel__button--left {
+    left: -40px;
+}
+
+.carousel__button--right {
+    right: -40px;
+}
+
+.carousel__button i {
+    width: 12px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(0, 0, 0, 0.3);
+    margin: 0 12px;
+}
+
+.carousel__indicator:hover {
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.carousel__indicator.current-slide {
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+/*///////////////////////////////   TABLET   ///////////////////////////////*/
+
+@media (min-width: 361px){
+    .burger-menu {
+        display: none;
+    }
+    .site-nav ul.nav-links {
+        display: flex;
+        justify-content: space-around;
+    }
+    .carousel {
+        width: 250px;
+    }
+}
+
+/*///////////////////////////////   DESKTOP   ///////////////////////////////*/
+
+@media (min-width: 769px){
+    .top-left {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 20%;
+    }
+    .searchbox {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
