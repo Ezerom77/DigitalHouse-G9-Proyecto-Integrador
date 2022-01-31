@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  justify-content: center;
+  
+}
+
+.container-header{
+  display: block;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+
+  .logo{
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    color: #6c6161;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0px 30px 20px 30px;
+    border-bottom: #c5c5c5 solid 2px;
+
+  }
