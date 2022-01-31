@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #ebebeb;
+    background-color: #fbfbff;
     margin: auto;
 }
 
@@ -14,8 +14,8 @@ body {
 .header {
     margin: auto;
     padding: 5px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px #6c6161;
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 /*///////////////////////////////   Header Top   ///////////////////////////////*/
@@ -135,7 +135,7 @@ ul li a i {
     background: #ee964b;
     border: #D54780 solid 1px;
     font-size: 20px;
-    color: #fff;
+    color: #ffffff;
     height: 40px;
     width: 40px;
     border-radius: 4px;
@@ -152,11 +152,11 @@ ul li a i {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    background-color: #fff;
-    width: 90vw;
+    background-color: #ffffff;
+    width: 800px;
     padding: 20px 0;
     margin-top: 10px;
-    box-shadow: 0px 0px 10px #6c6161;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 h3.title {
@@ -179,7 +179,7 @@ p.howto {
     height: 300px;
     width: 60%;
     margin: 10px;
-    box-shadow: 0px 0px 10px #6c6161;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .carousel__image {
@@ -192,17 +192,17 @@ p.howto {
 ul.product-detail {
     position: absolute;
     font-size: 15px;
-    text-shadow: 0px 0px 5px #fff;
+    text-shadow: 0px 0px 5px #ffffff;
     padding: 5px;
-    color: #fff;
+    color: #ffffff;
     bottom: 0;
 }
 
 li.carousel__slide i {
     position: absolute;
     padding: 10px;
-    color: #fff;
-    text-shadow: 0px 0px 5px #fff;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #ffffff;
 }
 
 li.carousel__slide i.fa-thumbs-up {
