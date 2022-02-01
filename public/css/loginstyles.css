@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
 html,
 body {
   height: 100%;
@@ -9,46 +15,8 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: white;
-}
-
-
-
-header nav{
-  display: none;
-  /*hay que revisar bien la barra de navegacion universal
-  teniendo en cuenta los tamaños de pantalla. Por ahora, 
-  la mantengo oculta. */
-  align-content:stretch;
-  padding-top: 15px;
-}
-
-header nav ul{
-  display: flex;
-  list-style-type: none;
-  justify-content: end;
-  gap: 20px;
-  font-size: 13px;
-  font-weight: 700;
   font-family: 'Lato', sans-serif;
-  color: #c5c5c5;
-  margin-left: 0px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
 
-header nav li{
-  padding: 0px 10px;
-}
-
-header nav li.carrito{
-  color: #000000;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-header nav li.carrito i{
-  padding-right: 5px;
-  margin: 0px;
 }
 
 div.logo{
@@ -58,60 +26,21 @@ div.logo{
     font-weight: 300;
     display: block;
     font-size: 1.5em;
-    margin: 0px 30px 20px 30px;
+    margin: auto;
     border-bottom: #c5c5c5 solid 2px;
+    text-align: center;
+    max-width: 500px;
     
 }
-
-.search-box{
-  display: none;
-}
-
-header nav div{
-  display: flex;
-  padding-right: 10px;
-  padding-left: 10px;
-
-}
-
-header nav div i{
-  padding-left: 5px;
-}
-
-header nav div input[type="text"]{
-  height: 20px;
-  padding: none;
-  border: none;
-  justify-content: end;
-  gap: 20px;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
-  color: #c5c5c5;
-  cursor: pointer;
-  transition: all 0.5s;
-  border: 1px solid #ee964b;
-  transition: all 0.5s
-}
-
-
-header nav div input:focus {
-  border-bottom: 1px solid #d65780 !important
-}
-
-header nav div input:focus~i {
-  color: #d65780 !important
-}
-
-
-
-
 
 .form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+
 }
 
 .form-signin .checkbox {
@@ -137,35 +66,6 @@ header nav div input:focus~i {
 }
 
 
-.login-block {
-  margin: 30px auto;
-  min-height: 93.6vh
-}
-
-.login-block .auth-box {
-  margin: 20px auto 0;
-  max-width: 450px !important
-}
-
-.card {
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
-  box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
-  border: none;
-  margin-bottom: 30px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  background-color: #fff
-}
-
-.card .card-block {
-  padding: 1.25rem
-}
-
-.f-80 {
-  font-size: 80px
-}
-
 .form-group {
   margin-bottom: 1.25em
 }
@@ -185,29 +85,12 @@ header nav div input:focus~i {
   border-bottom: 1px solid #ccc
 }
 
-.btn-md {
-  padding: 10px 16px;
-  font-size: 15px;
-  line-height: 23px
-}
-
 .btn-primary {
-  background-color: #4099ff;
-  border-color: #4099ff;
-  color: #fff;
   cursor: pointer;
   -webkit-transition: all ease-in .3s;
   transition: all ease-in .3s
 }
 
-.btn {
-  border-radius: 5px;
-  text-transform: capitalize;
-  font-size: 15px;
-  padding: 10px 19px;
-  cursor: pointer;
-  width: 300px;
-}
 
 .facebook-btn{
   background-color: #3B5998;
@@ -223,44 +106,6 @@ header nav div input:focus~i {
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
 
-
-}
-
-.m-b-20 {
-  margin-bottom: 20px
-}
-
-.btn-md {
-  padding: 10px 16px;
-  font-size: 15px;
-  line-height: 23px
-}
-
-.btn-enviar{
-  width: 100px;
-  height: 40px;
-  border: 1px solid #ee964b;
-  font-size: 13px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.5s;
-  background-color: #d65780
-}
-.btn-enviar:hover{
-  background-color: #000000;
-
-}
-
-
-font-size: 13px;
-
-
-.heading {
-  font-size: 21px
-}
-
-#infoMessage p {
-  color: red !important
 }
 
 .google-btn {
@@ -277,6 +122,22 @@ font-size: 13px;
   font-size: 17px;
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
+}
+
+
+.btn-enviar{
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ee964b;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0s;
+  background-color: #d65780
+}
+.btn-enviar:hover{
+  background-color: #000000;
+
 }
 
 .or-container {
@@ -304,7 +165,7 @@ font-size: 13px;
   position: relative;
   top: -11px;
   z-index: 1;
-
+}
 
 .social-login button{
   display: flex;
@@ -312,7 +173,7 @@ font-size: 13px;
 }
 
 .form-floating{
-  padding-top: 24px;
+  padding-top: 2px;
 }
 
 
@@ -321,3 +182,69 @@ font-size: 13px;
 }
 
 
+
+  
+  
+footer{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color:#d65780;
+  text-align: center;
+  padding-bottom: 25px;
+
+}
+
+.main-footer{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin:auto;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.fter{
+  display: block;
+  text-align: center;
+  padding:15px;
+  gap: 5px;
+  max-width: 25%;
+  justify-items:flex-start;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+}
+
+
+.fter h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  height: 2em;
+  
+}
+
+.fter article{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  height: max-content;
+  
+}
+
+.fter i{
+  color: #fff;
+  font-size: 28px;
+  height: 1.5em;  
+}
+
+.bottom-footer{
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  border-top: #fff solid 1px;
+  padding-top: 10px;
+
+}
