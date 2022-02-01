@@ -1,73 +1,185 @@
+/*Config generales*/
 *{
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     background-color: (255, 255, 255);
 }
 body{
-    
-    font-family: 'Lato', sans-serif;
     margin-left: 50px;
     margin-right: 50px;
-    border: solid 2px red
+    
+}
+/* Header */
+/*///////////////////////////////   HEADER   ///////////////////////////////*/
+.header {
+    margin: auto;
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-header{
-    padding: 20px;
-    margin: 50px 0;
-    height: 15vh;
-    width: 90vw;
-    background-color: #fff;
-    position: relative;
-    border-bottom: #D65780 2px solid ;
-    justify-content: center;
-
-}
-main{
-    height: 70vh;
-    border: solid 2px red;
+/*///////////////////////////////   Header Top   ///////////////////////////////*/
+.header-top{
+    width: 100%;
+    padding: 10px 15px;
 }
 
-.bottomNav{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-
+.top-left {
+    padding: 5px;
 }
-a{
+
+.logo {
+    font-size: x-large;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo a {
     text-decoration: none;
-    color: #222;
+    align-self: center;
+    color: #6c6161;
+    font-weight: 700;
 }
-h1{
-    color: white;
-    background-color: black;
+
+.logo:hover a {
+    color: #D54780;
 }
-.barraDeNavegacion{
-    background-color:#D65780 ;
-    color: black ;
+
+.searchbox {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    align-content: center;
 }
-.nav-item{
-    color: black
+
+.searchbox input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    text-align: center;
+    outline: 0;
+    padding-left: 25px;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid #ee964b;
+    box-sizing: border-box;
+    transition: all 0.5s;
 }
-.fotoProducto{
-    width: 400px;
-    height: 500px;
-}
+
 .fa-search {
     position: absolute;
-    left: 0;
+    display: flex;
+    left: 10px;
     color: #b7b7b7;
     top: 11px;
     cursor: pointer;
-    transition: all 0.5s
+    transition: all 0.5s;
 }
-.topNavBar {
+
+.top-right {
+    text-align: right;
+    padding: 5px;
+}
+
+.top-right .nav-links {
+    padding: 0;
+}
+
+.top-right .nav-links li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-right a {
+    padding-right: 5px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-weight: 700;
+    color: #6c6161;
+    text-decoration: none;
+}
+
+ul li:hover a {
+    color: #D54780;
+}
+
+ul li a i {
+    padding-left: 5px;
+}
+
+/*///////////////////////////////   Header Bottom   ///////////////////////////////*/
+.header-bottom{
+    padding: 20px 5px;
+}
+
+.site-nav ul.nav-links {
+    display: none;
+}
+
+.site-nav ul li a {
+    padding: 5px;
+    color: #c5c5c5;
+}
+
+.site-nav ul li:hover a {
+    color: #D54780;
+}
+
+.burger-menu {
+    background: #ee964b;
+    border: #D54780 solid 1px;
+    font-size: 20px;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
-.input_text {
-    position: relative
+/* Contenido general */
+a{
+    color: black;
 }
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbff;
+  }
+.mainTitle{
+    border: solid red 1px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 250px;
+    padding: 15px;
+    color: #6c6161;
+
+}  
+.shoppingBagManagement{ 
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d65780;
+    
+}
+.productPix #fotoProductomin{
+    height: 30vh ;
+    position: relative;
+    padding: 15px;
+}
+.contenido{
+    display: flex;
+}
+
 input[type="text"] {
     height: 40px;
     padding: 0 10px;
@@ -86,31 +198,14 @@ input[type="text"] {
 .input_text input:focus~i {
     color: #d65780 
 }
-.woman {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-    align-items: center
-}
-
-#fotoProductomin{
-    height: 30vh;
-    width: 12vw;
-    position: fixed;
-}
-.mainTitle{
-    font-weight: 400;
-    text-align: center;
-}
 .subTitle{
     font-weight: 600;
-    text-align: left;
     font-size: 13px;
     opacity: 0.8;
-    margin-left: 15px;
+    text-align: center;
 }
 .carrito{
-    width: 45vw;
+    width: 100%;
     height: 35vh;
     border-top: 1px solid #d65780;
     border-bottom: 1px solid #d65780;
@@ -123,19 +218,23 @@ input[type="text"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 15px;
+    
+   
 }
 .descripcion #nombreProducto{
     font-weight: 600;
     display: block;
     text-decoration: underline ;
+    color: black;
+    width: 100%;
 }
 .detalles{
     list-style: none;
     text-indent: -90px;
 }
-
-
 #eliminar{
     vertical-align: bottom;
     padding-top: 15px;
@@ -143,14 +242,6 @@ input[type="text"] {
     text-indent: -40px;
     text-decoration: underline;
     font-weight: 600;
-}
-footer{
-    height: 5vh;
-    text-align: center;
-}
-.copyright__body{
-    vertical-align: bottom;
-    opacity: 0.7;
 }
 .quantity {
     width: 100px;
@@ -167,3 +258,188 @@ footer{
 #precio{
     text-indent: -70px;
 }
+
+.resumenDeCompra{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    padding: 15px;
+    border-top: 1px solid #d65780;
+    border-bottom: 1px solid #d65780;
+    
+}
+.resumenDeCompra h3{
+    font-size: 14px;
+}
+.resumenDeCompra h4{
+    font-size: 12px;
+}
+.resumenDeCompra p{
+    font-size: 13px;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dotted 1px #6c6161 ;
+    
+}
+.subtotal #finalPrice{
+    margin-right: 10px;
+}
+.promoCode{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dotted 1px #6c6161 ;
+}
+
+.promoCode span{
+    width: 50%;
+    
+    
+}
+#cuponinput{
+    width: 80%;
+}
+#cargarcupon{
+    width: 25px;
+    height: 40px;
+    background-color: white;
+    border: none;
+   
+}
+#cargarcupon .fa-cut{
+    color: #d65780 ;
+    text-align: center;
+
+}
+.shippingMethod{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dotted 1px #6c6161 ;
+}
+.shippingMethod select{
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.shipping{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dotted 1px #6c6161 ;
+}
+.shipping p{
+    margin-right: 10px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.final{
+    text-align: center;
+    
+}
+.final button{
+    background-color: white;
+    border: 1px solid #ee964b;
+    box-shadow:  0 15px 30px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+}
+.final button a{
+    text-decoration: none;
+}
+.resumenDeCompra div{
+    margin: 15px;
+    
+
+}
+
+/*Footer*/
+footer{
+    height: 5vh;
+    text-align: center;
+}
+.copyright__body{
+    vertical-align: bottom;
+    opacity: 0.7;
+}
+
+
+
+/*///////////////////////////////   TABLET   ///////////////////////////////*/
+
+@media (min-width: 361px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 2px;
+    }
+    .top-left {
+        width: 70%;
+    }
+    .logo {
+        padding: 5px 0;
+        margin-left: 20px;
+        text-align: start;
+    }
+    .searchbox {
+        padding: 5px 0;
+    }
+    .searchbox input {
+        width: 150px;
+        text-align: start;
+    }
+    .fa-search {
+        position: absolute;
+        top: 17px;
+        left: 0;
+    }
+    .top-right {
+        padding: 5px 0;
+        margin-right: 20px;
+    }
+    .site-nav ul.nav-links {
+        display: flex;
+        justify-content: space-around;
+    }
+    .top-right .nav-links li {
+        padding: 14px 0;
+        text-align: right;
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    
+
+}
+
+/*version desktop*/
+
+    @media (min-width: 769px){
+        .top-left {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            margin-left: 30px;
+        }
+        .searchbox {
+            width: auto;
+            margin: 0%;
+            padding-right: 30px;
+        }
+        .searchbox input {
+            width: auto;
+        }
+        .shoppingBagManagement{
+            margin-top: 20px; 
+            width: 60%;
+        }
+
+}
+

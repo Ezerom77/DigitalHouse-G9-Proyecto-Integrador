@@ -9,38 +9,54 @@
     <link  rel="stylesheet" href="css/carrito.css"> </link>
 </head>
 <body>
-    
-    <header>
-       
-        <div class="topNavBar">
-            <h2>CLESSIDRA</h2>
-            <div class="input_text">
-              <input type="text" placeholder="Buscar">
-              <i class="fa fa-search"></i>
+        <header class="header">
+
+            <div class="header-top">
+                <div class="top-left">
+                    <div class="logo">
+                        <a href="/"><h3>CLESSIDRA</h3></a>
+                    </div>
+
+                    <div class="searchbox">
+                        <i class="fa fa-search"></i>  
+                        <input type="text" placeholder="Buscar prendas" />
+                    </div>
+                </div>
+                <nav class="top-right">
+                    <ul class="nav-links">
+                        <li><a href="/registro">Registro<i class="fas fa-user-circle"></i></a></li>
+                        <li><a href="/login">Log in<i class="fas fa-sign-in-alt"></i></a></li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-            <div class="bottomNavBar">
-                <ul class="bottomNav">
-                <li><a href="#">Mujer</a></li>
-                <li><a href="#">Hombre</a></li>
-                <li><a href="#">Vendedores</a></li>
-                <li><a href="#">Wishlist <i class="fas fa-heart"></i></a></li>
-                <li><a href="#">Carrito <i class="fa fa-shopping-bag"></i></a></li>
-              </span>
-            </ul>
+
+            <div class="header-bottom">
+                <nav class="site-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Mujer</a></li>
+                        <li><a href="#">Hombre</a></li>
+                        <li><a href="#">Vendedores</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="/carrito">Carrito</a></li>
+                    </ul>
+                    <div class="burger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
             </div>
+
     </header>
-    <main>
-        <h2 class="mainTitle">CARRITO</h2>
-        <br>
+
+    <main class="container">
+        <section class="shoppingBagManagement">
         <h4 class="subTitle">PRODUCTO</h4>
            <div class="carrito">
                
                <article class="contenido">
-                <span><img src= "\img\remera-carrito.jpg" id="fotoProductomin"></img></span>
+                <span class="productPix"><img src= "\img\remera-carrito.jpg" id="fotoProductomin"></img></span>
                     <div class="descripcion">
                         <a href="#"id="nombreProducto">REMERA SUB-URBAN</a>
-                        <br>
+                        
                         <ul class="detalles">
                             <li id="talle"> TALLE: </li>
                             <li id="color">COLOR: </li>
@@ -61,13 +77,45 @@
                </article>
            </div> 
            <div>
+            <h4 class="subTitle">RESUMEN DE COMPRA</h4>
                <article class="resumenDeCompra">
-
+                   
+                   <div class="subtotal">
+                       <h3>Subtotal</h3>
+                       <p id="finalPrice">$3000</p>
+                   </div>
+                   <div class="promoCode">
+                       <h3>Cupon</h3> 
+                       <br> <span>
+                       <input type="text" name="cupon" id="cuponinput"><button type="submit" id="cargarcupon"><i class="fas fa-cut"></i></button>
+                    </span>
+                   </div>
+                   <div class="shippingMethod">
+                       <h3>Metodo de envío</h3>
+                       <select> 
+                           <option>Envío ($400) </option>
+                           <option>Recogida local</option>
+                       </select>
+                   </div>
+                   <div class="shipping">
+                       <h3 class="envio">Envío</h3>
+                       <p>$400</p> 
+                
+                   </div>
+                <div class="total">
+                    <h3>Total</h3>
+                    <p>$3400</p>
+                </div>
+                <br>
+                <div class="final">
+                    <button type="submit"><a href="#">Finalizar compra</a></button>
+                </div>
                </article>
            </div>
+        </section>
     </main>
     <footer>
-        <div class="copyright__body">© 2022 Clessidra</div>
+       
     </footer>
 </body>
 </html>
