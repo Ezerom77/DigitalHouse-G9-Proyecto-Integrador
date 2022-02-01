@@ -13,7 +13,6 @@ body {
   display: block;
   align-items:stretch;
   padding-top: 40px;
-  padding-bottom: 40px;
   background-color: white;
   font-family: 'Lato', sans-serif;
 
@@ -39,7 +38,7 @@ div.logo{
   padding: 15px;
   margin: auto;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
+  margin: 40px auto;
 
 }
 
@@ -245,6 +244,6 @@ footer{
   width: 100%;
   color: #fff;
   border-top: #fff solid 1px;
-  padding-top: 10px;
+  padding-top: 20px;
 
 }
