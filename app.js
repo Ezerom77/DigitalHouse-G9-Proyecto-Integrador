@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-// activacion del sever en port 3000
+// activacion del sever en port 3050 y configurando opciones de Heroku
 app.listen(process.env.PORT || 3050, () => console.log("servidor corriendo en puerto 3050"));
 
 // exponiendo la carpeta public

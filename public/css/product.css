@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: "Lato", sans-serif;
+}
 .container {
   min-height: 100vh;
   display: flex;
@@ -19,7 +22,6 @@
   background-color: #fff;
   position: relative;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  font-family: "Lato", sans-serif;
 }
 
 .container .card .form {
@@ -393,6 +395,77 @@ input[type="text"] {
 .social i:nth-child(4):hover {
   color: #000;
 }
+
+/* Estilos del footer */
+
+
+footer{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color:#d65780;
+  text-align: center;
+  padding-bottom: 0;
+  justify-items: flex-end;
+  height:max-content;
+
+}
+
+.main-footer{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  margin:auto;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.fter{
+  display: block;
+  text-align: center;
+  padding:15px;
+  gap: 5px;
+  max-width: 25%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+}
+
+
+.fter h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  height: 2em;
+  
+}
+
+.fter article{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  height: max-content;
+  
+}
+
+.fter i{
+  color: #fff;
+  font-size: 28px;
+  height: 1.5em;  
+}
+
+.bottom-footer{
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  margin-bottom: auto;
+}
+
+/* Ajustes responsivos */
 
 @media (max-width: 750px) {
   .container .card {
