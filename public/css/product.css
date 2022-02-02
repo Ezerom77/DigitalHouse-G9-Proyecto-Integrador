@@ -469,10 +469,7 @@ input[type="text"] {
 .features li {
   font-size: 14px;
   margin-left: 20px;
-}
-
-.description .p1 {
-  font-size: 14px;
+  list-style: disc;
 }
 
 .social {
@@ -577,15 +574,6 @@ footer {
   .top-left {
     width: 70%;
   }
-
-  /*
-  .top-left {
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  */
 
   .logo {
     padding: 5px 0;
