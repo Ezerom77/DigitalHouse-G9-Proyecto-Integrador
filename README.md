@@ -1,4 +1,26 @@
+
 # DigitalHouse-G9-Proyecto-Integrador
+## Sprint 2 - 2/2/2022
+### _Entregables_
+- Retro: Cargada en el Repo [link](https://github.com/Ezerom77/DigitalHouse-G9-Proyecto-Integrador/blob/main/retro.md)
+- Trello:  [link](https://trello.com/b/U0KKKwLH/sprint-1)
+- Heroku [link](https://dh-g9-clessidra.herokuapp.com/)
+
+## Sprint 1
+### _Entregables_
+
+- Trello:  [link](https://trello.com/b/U0KKKwLH/sprint-1)
+
+- Wireframe: [link](https://drive.google.com/file/d/1ti_oavMh0R0u2lfFfm_bwNSz8EPGsros/view?usp=sharing)
+
+- Páginas referentes:
+1. [Catawiki](https://www.catawiki.com/es/c/597-ropa)
+2. [Renovatuvestidor](https://www.renovatuvestidor.com/home)
+3. [Juanperez](https://www.juanperez.com.ar)
+4. [Closeando](https://closeando.com)
+6. [Somoscocoliche](https://www.somoscocoliche.com)
+
+- Paleta de colores:  [link](https://coolors.co/ee964b-fbfbff-d65780-000000)
 
 
 ### Temática y descripción del sitio:
@@ -34,21 +56,6 @@ y por la facilidad de compra.
 Al igual que el comprador, es de cualquier sexo, tiene entre 16 y 35 años, suelen renovar su ropa en cada temporada y valoran la posibilidad de capitalizar esa inversión con su venta.
 Cuidan y clasifican las prendas considerando su precio de reventa, son consumidores habituales de plataformas de compra-venta (Mercadolibre / Facebook Marketplace, etc) 
 
-### _Entregables_
-
-- Trello:  [link](https://trello.com/b/U0KKKwLH/sprint-1)
-
-- Wireframe: [link](https://drive.google.com/file/d/1ti_oavMh0R0u2lfFfm_bwNSz8EPGsros/view?usp=sharing)
-
-- Páginas referentes:
-1. [Catawiki](https://www.catawiki.com/es/c/597-ropa)
-2. [Renovatuvestidor](https://www.renovatuvestidor.com/home)
-3. [Juanperez](https://www.juanperez.com.ar)
-4. [Closeando](https://closeando.com)
-6. [Somoscocoliche](https://www.somoscocoliche.com)
-
-- Paleta de colores:  [link](https://coolors.co/ee964b-fbfbff-d65780-000000)
-
 ### Integrantes:
 
 #### Ariel Muslera
@@ -65,3 +72,5 @@ Ariel pasa su tiempo entre el sur de California y Buenos Aires junto a su famili
 *Actualmente emprendiendo su camino de aprendizaje en la programación. Tiene experiencia en logística, habiendo trabajado específicamente en disposición de materiales e implementación de nuevos proyectos en el rubro automotriz, y más recientemente en el rubro de los seguros, trabajando en una productora de ART. 
 Es un apasionado por resolver problemas y trabajar en equipo, y cree que la programación brinda las herramientas necesarias para hacerlo. 
 Su destino preferido es la montaña, especialmente cuando hay nieve.* 
+
+
