@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Carrito </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link  rel="stylesheet" href="css/carrito.css"> </link>
 </head>
@@ -51,27 +52,30 @@
         <section class="shoppingBagManagement">
         <h4 class="subTitle">PRODUCTO</h4>
            <div class="carrito">
-               
                <article class="contenido">
                 <span class="productPix"><img src= "\img\remera-carrito.jpg" id="fotoProductomin"></img></span>
                     <div class="descripcion">
+                        <div class="productName">
                         <a href="#"id="nombreProducto">REMERA SUB-URBAN</a>
-                        
+                    </div>
+                    <div class="details">
                         <ul class="detalles">
-                            <li id="talle"> TALLE: </li>
-                            <li id="color">COLOR: </li>
+                            <li id="talle"> TALLE: <strong>2</strong></li>
+                            <li id="color">COLOR:  <strong>Red</strong></li>
                         </ul>
+                    </div>
+                    <div class="price">
                         <p id="precio">$3000</p>
-                        
-                        
-                        <br>
-                        <div class="quantity">
+                    </div>
+                        <div>
+                            <span class="quantity">
                             <i class="fa fa-minus"></i> <span class="qty">1</span>
                             <i class="fa fa-plus"></i>
+                        </span>
                           </div>
-
-                        <a href="#" id="eliminar">Eliminar articulo</a>
-
+                          <div class="removeA">
+                        <a href="#" id="eliminar">Eliminar artículo</a>
+                    </div>
                     </div>
 
                </article>
@@ -85,7 +89,7 @@
                        <p id="finalPrice">$3000</p>
                    </div>
                    <div class="promoCode">
-                       <h3>Cupon</h3> 
+                       <h3>Cupón</h3> 
                        <br> <span>
                        <input type="text" name="cupon" id="cuponinput"><button type="submit" id="cargarcupon"><i class="fas fa-cut"></i></button>
                     </span>
@@ -115,7 +119,24 @@
         </section>
     </main>
     <footer>
-       
+        <div class="main-footer">
+            <section class="fter">
+              <i class="fab fa-whatsapp"></i>
+              <h2>DUDAS?</h2>
+              <article>Consultanos cualquier duda antes de comprar via Whatsapp</article>
+            </section>
+            <section class="fter">
+              <i class="fas fa-shipping-fast"></i>
+              <h2>ENVÍOS Y RETIROS</h2>
+              <article>Chequeá todas las opciones en tu carrito de compra antes de pagar.</article>
+            </section>
+            <section class="fter">
+              <i class="fas fa-user-shield"></i>
+              <h2>100% SEGURO</h2>
+              <article>¿No te gusta? ¡Devolvelo gratuitamente! En Clessidra estás siempre protegid@.</article>
+            </section>
+          </div>
+          <div class="bottom-footer">Copyright © 2022 Clessidra S.R.L.</div>
     </footer>
 </body>
 </html>
