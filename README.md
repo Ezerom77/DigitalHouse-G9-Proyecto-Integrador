@@ -1,5 +1,11 @@
-
 # DigitalHouse-G9-Proyecto-Integrador
+## Sprint 3 - 16/2/2022
+### _Entregables_
+
+- Heroku [link](https://dh-g9-clessidra.herokuapp.com/)
+- Incorporación de Routes y Controllers.
+- Aplicación de Template Engine (EJS).
+
 ## Sprint 2 - 2/2/2022
 ### _Entregables_
 - Retro: Cargada en el Repo [link](https://github.com/Ezerom77/DigitalHouse-G9-Proyecto-Integrador/blob/main/retro.md)
@@ -72,5 +78,3 @@ Ariel pasa su tiempo entre el sur de California y Buenos Aires junto a su famili
 *Actualmente emprendiendo su camino de aprendizaje en la programación. Tiene experiencia en logística, habiendo trabajado específicamente en disposición de materiales e implementación de nuevos proyectos en el rubro automotriz, y más recientemente en el rubro de los seguros, trabajando en una productora de ART. 
 Es un apasionado por resolver problemas y trabajar en equipo, y cree que la programación brinda las herramientas necesarias para hacerlo. 
 Su destino preferido es la montaña, especialmente cuando hay nieve.* 
-
-
