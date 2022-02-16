@@ -4,17 +4,17 @@
   box-sizing: border-box
 }
 
-html,
-body {
-  height: 100%;  
-}
 
 body {
-  display: block;
-  align-items:flex-start;
-  padding-top: 40px;
-  background-color: white;
+  margin: auto;
+  background-color: #fbfbff;
   font-family: 'Lato', sans-serif;
+}
+
+.main-create {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
 
 }
 

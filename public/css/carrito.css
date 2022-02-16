@@ -1,13 +1,10 @@
 /*Config generales*/
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     background-color: (255, 255, 255);
-}
-body{
-    margin-left: 50px;
-    margin-right: 50px;
-    
 }
 /* Header */
 /*///////////////////////////////   HEADER   ///////////////////////////////*/
@@ -145,6 +142,9 @@ ul li a i {
     align-items: center;
 }
 /* Contenido general */
+main{
+    margin: 50px 0;
+}
 a{
     color: black;
 }
@@ -171,12 +171,7 @@ a{
     border: 1px solid #d65780;
     
 }
-/*
-.productPix #fotoProductomin{
-    height: 30vh ;
-    position: relative;
-    padding: 15px;
-}*/
+
 .contenido{
     width: 100%;
     display: flex;

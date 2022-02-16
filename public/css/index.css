@@ -38,7 +38,10 @@ body {
     text-decoration: none;
     align-self: center;
     color: #6c6161;
-    font-weight: 700;
+}
+
+.logo a h3 {
+    font-weight: bold;
 }
 
 .logo:hover a {

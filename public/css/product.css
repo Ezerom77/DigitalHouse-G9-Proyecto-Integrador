@@ -379,7 +379,7 @@ input[type="text"] {
 
 .options {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -413,7 +413,7 @@ input[type="text"] {
 }
 
 .options button {
-  width: 100px;
+  width: 120px;
   height: 40px;
   border: 1px solid #ee964b;
   font-size: 13px;
@@ -424,6 +424,21 @@ input[type="text"] {
 }
 
 .options button:hover {
+  background-color: #212121;
+}
+.options button#edit {
+  width: 70px;
+  height: 40px;
+  border: 1px solid #ee964b;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #d65780;
+  padding: 3px;
+}
+
+.options button#edit:hover {
   background-color: #212121;
 }
 
