@@ -1,4 +1,12 @@
 # DigitalHouse-G9-Proyecto-Integrador
+## Sprint 4 - 2/3/2022
+### _Entregables_
+
+- Heroku [link](https://dh-g9-clessidra.herokuapp.com/)
+- Carpeta data con archivo products.json.
+- Carpeta data con archivo users.json.
+- Sección funcional con listado, detalle, alta, modificación y baja de productos.
+- Trello actualizado:  [link](https://trello.com/b/U0KKKwLH/sprints)
 ## Sprint 3 - 16/2/2022
 ### _Entregables_
 
