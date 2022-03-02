@@ -1,13 +1,11 @@
-const express = require("express");
-const router  = express.Router();
+// Requires
+var express = require('express');
 const mainController = require('../controllers/mainController');
+var router = express.Router();
+// const multer = require ('multer');
 
-const path = require("path");
 
-router.get('/', mainController.index);
-router.get('/carrito', mainController.carrito);
-router.get('/perfil',mainController.perfil)
-router.get("/login", mainController.login);
-router.get("/registro", mainController.registro);
+/* Main routes */
+router.get('/',mainController.index);
 
 module.exports = router;

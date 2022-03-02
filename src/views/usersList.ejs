@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head') %>
+    </head>
+    <body>
+    <%- include('./partials/header') %>
+        <main>
+            <h3><%= title %></h3>
+            <div class="userList">
+            <% for(i=0;i<users.length;i++) { %>
+                <div class="user">
+                                    <P class="id">ID: <%=users[i].id%></P>
+                                    <P>Nombre: <%=users[i].first_name%></P>
+                                    <P>Apellidos: <%=users[i].last_name%></P>
+                                    <P>email: <%=users[i].email%></P>
+                                    <P>Contraseña: <%=users[i].password%></P>
+                                    <P>Categoria: <%=users[i].category%></P>
+                                    <P>Avatar: <%=users[i].image%></P>
+                                </div>
+
+                                               <% } %>
+                                            </div>
+        </main>
+        <%- include('./partials/footer') %> 
+
+    </body>
+</html>
+

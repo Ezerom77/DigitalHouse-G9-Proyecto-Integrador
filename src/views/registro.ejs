@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Registro</title>
+  <head>
+    <%- include('./partials/head') %>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <body>
+    <%- include('./partials/header') %>
+    <main class="form-signin">
+      <div>
+        <a class="logo" href="/">CLESSIDRA</a>
+      </div>
+      <form
+        method="post"
+        action="/users/registro"
+        enctype="multipart/form-data"
+      >
+        <h1 class="form-title h3 mb-3 fw-normal">
+          Bienvenido/a!<br />Por favor registrate con tus datos:
+        </h1>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            name="userName"
+            placeholder="Juan"
+          />
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="apellido"
+            name="userLastName"
+            placeholder="Perez"
+          />
+          <label for="apellido">Apellido</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="userEmail"
+            placeholder="name@example.com"
+          />
+          <label for="email">Correo electrónico</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="emailconfirm"
+            name="userEmailConfirm"
+            placeholder="name@example.com"
+          />
+          <label for="emailconfirm">Confirmar correo electrónico</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="userPassword"
+            placeholder="Contraseña"
+          />
+          <label for="password">Elegir contraseña</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control pass-form"
+            id="passwordconfirm"
+            name="userPasswordConfirm"
+            placeholder="Confirmar contraseña"
+          />
+          <label for="passwordconfirm">Confirmar contraseña</label>
+        </div>
+        <br />
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="acceptterms" name="userTermsAccept" />
+            Acepto los <a href="#!">Términos y Condiciones</a>
+          </label>
+        </div>
+        <button class="btn-enviar w-100" type="submit">Registrarme</button>
+      </form>
+    </main>
 
-  <!-- Other CSS, fonts, etc. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-  <!-- Internal CSS -->
-  <link href="css/loginstyles.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/index.css">
-
-</head>
-
-<body>
-  <%- include('./partials/header') %>
-  <main class="form-signin">  
-    <div>
-      <a class="logo" href="/">CLESSIDRA</a>
-    </div>
-    <form>
-      <h1 class="form-title h3 mb-3 fw-normal">Bienvenido/a!<br>Por favor registrate con tus datos:</h1> 
-      <div class="form-floating">
-        <input type="text" class="form-control" id="nombre" placeholder="Juan">
-        <label for="nombre">Nombre</label>
-      </div>
-      <div class="form-floating">
-        <input type="text" class="form-control" id="apellido" placeholder="Perez">
-        <label for="apellido">apellido</label>
-      </div>
-      <div class="form-floating">
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        <label for="email">Correo electrónico</label>
-      </div>
-      <div class="form-floating">
-        <input type="email" class="form-control" id="emailconfirm" placeholder="name@example.com">
-        <label for="emailconfirm">Confirmar correo electrónico</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="password" placeholder="Contraseña">
-        <label for="password">Elegir contraseña</label>
-      </div>
-      <div class="form-floating">
-        <input type="password" class="form-control pass-form" id="passwordconfirm" placeholder="Confirmar contraseña">
-        <label for="passwordconfirm">Confirmar contraseña</label>
-      </div>
-      <br>
-      <div class="checkbox mb-3">
-        <label>
-        <input type="checkbox" value="acceptterms"> Acepto los <a href="#!">Términos y Condiciones</a>
-        </label>
-      </div>
-      <button class="btn-enviar w-100 " type="submit">Registrarme</button>
-  </form>
-</main> 
-   
-<%- include('./partials/footer') %>
+    <%- include('./partials/footer') %>
   </body>
 </html>

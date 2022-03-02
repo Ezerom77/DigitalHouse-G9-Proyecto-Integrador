@@ -10,16 +10,16 @@ if(increment<9){ increment=increment+1; qty.innerHTML=increment; } }); minus.add
     }
     });
 
-    var heart=document.querySelector(".fa-heart-o");
+    var heart=document.querySelector("#cora");
 
     heart.addEventListener('click',function(){
-    if(heart.classList.contains('fa-heart-o')){
-    heart.classList.remove('fa-heart-o');
-    heart.classList.add('fa-heart');
+    if(heart.classList.contains('far')){
+    heart.classList.remove('far');
+    heart.classList.add('fas');
     }
     else{
-    heart.classList.add('fa-heart-o');
-    heart.classList.remove('fa-heart');
+    heart.classList.add('far');
+    heart.classList.remove('fas');
     }
 
     });

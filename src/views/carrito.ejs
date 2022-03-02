@@ -1,60 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Carrito </title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link  rel="stylesheet" href="css/carrito.css"> </link>
+    <%- include('./partials/head') %>
 </head>
 <body>
-        <!-- <header class="header">
-
-            <div class="header-top">
-                <div class="top-left">
-                    <div class="logo">
-                        <a href="/"><h3>CLESSIDRA</h3></a>
-                    </div>
-
-                    <div class="searchbox">
-                        <i class="fa fa-search"></i>  
-                        <input type="text" placeholder="Buscar prendas" />
-                    </div>
-                </div>
-                <nav class="top-right">
-                    <ul class="nav-links">
-                        <li><a href="/registro">Registro<i class="fas fa-user-circle"></i></a></li>
-                        <li><a href="/login">Log in<i class="fas fa-sign-in-alt"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header-bottom">
-                <nav class="site-nav">
-                    <ul class="nav-links">
-                        <li><a href="#">Mujer</a></li>
-                        <li><a href="#">Hombre</a></li>
-                        <li><a href="#">Vendedores</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                        <li><a href="/carrito">Carrito</a></li>
-                    </ul>
-                    <div class="burger-menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </nav>
-            </div>
-
-    </header> -->
     <%- include('./partials/header') %>
-
     <main class="container">
         <section class="shoppingBagManagement">
         <h4 class="subTitle">PRODUCTO</h4>
            <div class="carrito">
                <article class="contenido">
-                <span class="productPix"><img src= "\img\remera-carrito.jpg" id="fotoProductomin"></img></span>
+                <span class="productPix"><img src= "/images/products/Remera.jpg" id="fotoProductomin"></img></span>
                     <div class="descripcion">
                         <div class="productName">
                         <a href="/productDetail"id="nombreProducto">REMERA SUB-URBAN</a>
@@ -84,7 +40,6 @@
            <div>
             <h4 class="subTitle">RESUMEN DE COMPRA</h4>
                <article class="resumenDeCompra">
-                   
                    <div class="subtotal">
                        <h3>Subtotal</h3>
                        <p id="finalPrice">$3000</p>
@@ -104,8 +59,7 @@
                    </div>
                    <div class="shipping">
                        <h3 class="envio">Envío</h3>
-                       <p>$400</p> 
-                
+                       <p>$400</p>
                    </div>
                 <div class="total">
                     <h3>Total</h3>
