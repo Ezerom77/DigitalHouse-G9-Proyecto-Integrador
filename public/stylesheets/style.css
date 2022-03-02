@@ -1295,6 +1295,9 @@ footer{
   .searchbox input {
       width: auto;
   }
+  .contenido .productPix{
+    max-width: fit-content;
+  }
 }
 
 
