@@ -54,5 +54,13 @@
   "email": "eze@ezerom.com.ar",
   "password": "$2a$10$6MevbsmtVipK9uAmDZvyMOHqz0M0DnRQhSTVZWQUaJmmVefxk0MLe",
   "image": "1648501759811.jpeg"
+ },
+ {
+  "id": 8,
+  "first_name": "www",
+  "last_name": "zerz",
+  "email": "www@ezerom.com.ar",
+  "password": "$2a$10$DImW56.5aY4w.2tnR2P3AObLwak7rqHfq8wrFP4G7GF4Kp1uLvCfu",
+  "image": "1648502539820.jpeg"
  }
 ]
