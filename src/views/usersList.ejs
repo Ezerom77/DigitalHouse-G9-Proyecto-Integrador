@@ -10,13 +10,14 @@
             <div class="userList">
             <% for(i=0;i<users.length;i++) { %>
                 <div class="user">
+                    <P><img src="/images/profileImages/<%=users[i].image%>" alt="Foto de perfil"></P>
                                     <P class="id">ID: <%=users[i].id%></P>
                                     <P>Nombre: <%=users[i].first_name%></P>
                                     <P>Apellidos: <%=users[i].last_name%></P>
                                     <P>email: <%=users[i].email%></P>
-                                    <P>Contraseña: <%=users[i].password%></P>
-                                    <P>Categoria: <%=users[i].category%></P>
-                                    <P>Avatar: <%=users[i].image%></P>
+                                    <!-- <P>Contraseña: <%=users[i].password%></P>
+                                    <P>Categoria: <%=users[i].category%></P> -->
+                                    <!-- <P>Avatar: <%=users[i].image%></P> -->
                                 </div>
 
                                                <% } %>

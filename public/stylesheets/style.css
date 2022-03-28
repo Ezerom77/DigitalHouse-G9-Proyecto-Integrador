@@ -1206,11 +1206,15 @@ div.user {
   border: solid 2px black;
   padding: 5px;
   margin: 20px;
+  align-items: center;
 }
 p.id {
   font-weight: bold;
   font-size: 1.5rem;
 }
+ div.user img {
+   width: 100%;
+ }
 
 
 
