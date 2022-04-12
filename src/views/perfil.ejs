@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include('./partials/head') %>
-    </head>
-    <body>
+  <head>
+    <%- include('./partials/head') %>
+  </head>
+  <body>
     <%- include('./partials/header') %>
-        <main>
-            <h3>Bienvenid@ <%=loggedUser.first_name%></h3>
-            <div class="userList">
-                <div class="user">
-                    <P><img src="/images/profileImages/<%=loggedUser.image%>" alt="Foto de perfil"></P>
-                    <P class="id">ID: <%=loggedUser.id%></P>
-                    <P>Nombre: <%=loggedUser.first_name%></P>
-                    <P>Apellidos: <%=loggedUser.last_name%></P>
-                    <P>email: <%=loggedUser.email%></P>
-                    <!-- <P>Contraseña: <%=loggedUser.password%></P> -->
-                    <!-- <P>Categoria: <%=loggedUser.category%></P> -->
-                    
-                </div>
-            </div>
-        </main>
-        <%- include('./partials/footer') %> 
-
-    </body>
+    <main>
+      <h3>Bienvenid@ <%=loggedUser.nombre%></h3>
+      <div class="userList">
+        <div class="user">
+          <img src="/images/profileImages/<%=loggedUser.avatar%>" alt="" />
+          <P class="id">ID: <%=loggedUser.id%></P>
+          <P>Nombre: <%=loggedUser.nombre%></P>
+          <P>Apellidos: <%=loggedUser.apellido%></P>
+          <P>email: <%=loggedUser.email%></P>
+          <form method="post" action="/users/logout">
+            <button class="btn-borrar w-100" type="submit">Log Out</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
 </html>
-
