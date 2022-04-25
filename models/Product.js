@@ -39,12 +39,13 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: true,
     },
     imagen: {
-      type: dataTypes.STRING(50),
+      type: dataTypes.STRING(150),
     }
   };
   let config = {
     tableName: "Producto",
     timestamps: false,
+    onDelete: 'CASCADE'
   };
   const Product = sequelize.define(alias, cols, config);
   Product.associate = function (models) {

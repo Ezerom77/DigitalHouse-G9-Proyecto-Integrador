@@ -22,6 +22,30 @@ let userController = {
   login: (req, res) => {
     res.render("login", { title: "Login" });
   },
+  edit: (req, res) => {
+    res.render("edit", { title: "Editar Perfil", user: req.session.user });
+  },
+
+  update: (req, res) => {
+    db.Users.update(
+      {
+        nombre: req.body.userName,
+        apellido: req.body.userLastName,
+        email: req.body.userEmail,
+        // userPassword: req.body.userPassword,
+      },
+      { where: { id: req.session.user.id } }
+    ).then(() => {
+      db.Users.findOne({
+        where: { email: req.body.userEmail },
+      }).then((users) => {
+            req.session.user = users;
+            res.cookie("recordame", users.email, { maxAge: 6000000  });
+            res.redirect("/users/perfil");
+    });
+  })
+},
+
   logged: (req, res) => {
     db.Users.findOne({
       where: { email: req.body.email },
@@ -31,9 +55,7 @@ let userController = {
           req.session.user = users;
           // cookies
           if (req.body.recordame != undefined) {
-            res.cookie("recordame",
-            users.email,
-            { maxAge: 60000 });
+            res.cookie("recordame", users.email, { maxAge: 6000000  });
           }
           res.redirect("/users/perfil");
         } else {

@@ -28,21 +28,24 @@ const productController = {
       });
     });
   },
+
   store: async (req, res) => {
     let nombreImagen = req.file.filename;
-    console.log(req.categorias);
 
     let productoNuevo = {
       nombre: req.body.productName,
       descripcion: req.body.productDescription,
-      // id_categories: req.body.categorias,
       precio: req.body.productPrice,
       id_color: req.body.color,
       id_talle: req.body.talle,
       imagen: nombreImagen,
     };
-
-    await db.Products.create(productoNuevo);
+    let x = await db.Products.create(productoNuevo);
+    let idP = x.dataValues.id;
+    for (let i = 0; i < req.body.categorias.length; i++) {
+      let objeto = { id_Producto: idP, id_Categoria: req.body.categorias[i] };
+      await db.Producto_Categoria.create(objeto);
+    }
     res.redirect("/products");
   },
   detail: (req, res) => {
@@ -74,7 +77,7 @@ const productController = {
       });
     });
   },
-  update: (req, res) => {
+  update: async (req, res) => {
     // let nombreImagen = req.file.filename;
 
     let productoNuevo = {
@@ -86,7 +89,7 @@ const productController = {
       id_talle: req.body.talle,
       // imagen: nombreImagen,
     };
-    db.Products.update(productoNuevo, { where: { id: req.params.id } });
+    await db.Products.update(productoNuevo, { where: { id: req.params.id } });
     res.redirect("/products/detail/" + req.params.id);
   },
   delete: (req, res) => {
@@ -96,12 +99,21 @@ const productController = {
           path.join(__dirname, "../../public/images/products/", producto.imagen)
         );
       })
+      // .then(
+      //   db.Producto_Categoria.destroy({
+      //     where: {
+      //       id_Producto: req.params.id,
+      //     },
+      //   })
+      // )
       .then(
         db.Products.destroy({
           where: { id: req.params.id },
         })
-      );
-    res.redirect("/products");
+      )
+      .then(function () {
+        res.redirect("/products");
+      });
   },
 };
 module.exports = productController;

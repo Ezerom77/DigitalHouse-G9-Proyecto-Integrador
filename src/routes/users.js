@@ -42,6 +42,8 @@ router.post('/login', userController.logged);
 router.get('/registro', guestMiddleware, userController.registro);
 router.post('/registro', uploadFile.single('profilePic'), validations , userController.store);
 router.post('/logout', userController.logout);
+router.get('/edit',loggedMiddleware, userController.edit)
+router.post('/edit',loggedMiddleware, userController.update)
 
 
 //Carrito
