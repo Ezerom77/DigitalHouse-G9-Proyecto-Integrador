@@ -1,4 +1,15 @@
 # DigitalHouse-G9-Proyecto-Integrador
+## Sprint 6 - 25/4/2022
+### _Entregables_
+
+- Heroku [link](https://dh-g9-clessidra.herokuapp.com/)
+- Diagrama de base de datos del proyecto: [link](https://drive.google.com/file/d/19eunWMBIevAYoVKA6MsqUqsLu71LJnYJ/view?usp=sharing)
+- Script (.sql) con la estructura de la base de datos: [link](https://drive.google.com/file/d/1zh3-jj9nqlWAjHwwBZ4H5Lk4rBy8vF-v/view?usp=sharing)
+- ORM Sequelize
+  - CRUD Usuarios: Ok
+  - CRUD Productos: Ok
+- Trello actualizado:  [link](https://trello.com/b/U0KKKwLH/sprints)
+
 ## Sprint 5 - 28/3/2022
 ### _Entregables_
 
