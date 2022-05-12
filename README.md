@@ -1,4 +1,22 @@
 # DigitalHouse-G9-Proyecto-Integrador
+## Sprint 7 - 11/5/2022
+### _Entregables_
+
+- Heroku [link](https://dh-g9-clessidra.herokuapp.com/)
+- Validar por Javascript (frontend) y por Node js (backend):
+
+  - Formulario de registro de usuario
+  - Formulario de login de usuario
+  - Formulario de creación de producto
+  - Formulario de edición de producto
+- Carrito 
+  - Agregar productos
+  - Eliminar productos
+  - Vaciar carrito
+  - Integración con Mercadopago
+  
+- Trello actualizado:  [link](https://trello.com/b/U0KKKwLH/sprints)
+
 ## Sprint 6 - 25/4/2022
 ### _Entregables_
 
