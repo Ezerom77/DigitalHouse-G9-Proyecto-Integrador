@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 let userController = {
   usuarios: (req, res) => {
     db.Users.findAll().then(function (users) {
-      res.render("usersList", { title: "Todos los usuarios", users: users });
+      res.render("usersList", { users: users });
     });
   },
   perfil: (req, res) => {
@@ -20,10 +20,10 @@ let userController = {
     }
   },
   login: (req, res) => {
-    res.render("login", { title: "Login" });
+    res.render("login");
   },
   edit: (req, res) => {
-    res.render("edit", { title: "Editar Perfil", user: req.session.user });
+    res.render("edit", { user: req.session.user });
   },
 
   update: (req, res) => {
@@ -42,38 +42,38 @@ let userController = {
             req.session.user = users;
             res.cookie("recordame", users.email, { maxAge: 6000000  });
             res.redirect("/users/perfil");
-    });
-  })
-},
+      });
+    })
+  },
 
   logged: (req, res) => {
-    db.Users.findOne({
-      where: { email: req.body.email },
-    }).then((users) => {
-      if (users) {
-        if (bcrypt.compareSync(req.body.password, users.password)) {
-          req.session.user = users;
-          // cookies
-          if (req.body.recordame != undefined) {
-            res.cookie("recordame", users.email, { maxAge: 6000000  });
+    let errors = validationResult(req);
+    if (errors.isEmpty()) {
+      db.Users.findOne({
+        where: { email: req.body.email },
+      }).then((users) => {
+        if (users) {
+          if (bcrypt.compareSync(req.body.password, users.password)) {
+            req.session.user = users;
+            // cookies
+            if (req.body.recordame != undefined) {
+              res.cookie("recordame", users.email, { maxAge: 6000000  });
+            }
+            res.redirect("/users/perfil");
+          } else {
+            res.render("login" , { error : "* Credenciales invalidas" });
           }
-          res.redirect("/users/perfil");
-        } else {
-          res.render("login", {
-            title: "Login",
-            error: "Contraseña incorrecta",
-          });
         }
-      } else {
-        res.render("login", {
-          title: "Login",
-          error: "Credenciales invalidas",
-        });
-      }
-    });
-  },
+        else {
+          res.render("login" , { errorUser : "* Usuario inexistente" , oldData: req.body });
+        } 
+      });
+    } else {
+      res.render("login", { errors: errors.mapped() , oldData: req.body }); // Error hay campos vacíos
+    }
+},
   registro: (req, res) => {
-    res.render("registro", { title: "Registro" });
+    res.render("registro");
   },
   store: (req, res) => {
     let errors = validationResult(req);
@@ -87,20 +87,15 @@ let userController = {
         fecha_creacion: new Date(),
       };
       db.Users.create(newUser);
-      res.render("login", { title: "Login" });
+      res.render("login")
     } else {
-      res.render("wrongForm");
+      res.render("registro", {errors: errors.mapped() , oldData: req.body });
     }
   },
   logout: (req, res) => {
     req.session.destroy();
     res.clearCookie("recordame");
     res.redirect("/users/login");
-  },
-
-  // este metodo vamos a tener que moverlo a otro lado...
-  carrito: (req, res) => {
-    res.render("carrito", { title: "Carrito de compras" });
   },
 };
 
