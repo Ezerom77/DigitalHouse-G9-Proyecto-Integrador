@@ -1,4 +1,3 @@
-
 window.addEventListener('load', ()  => {
     let productForm = document.querySelector('form');
     let productName = document.getElementById('productName');
@@ -9,7 +8,6 @@ window.addEventListener('load', ()  => {
     let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
     
 
-    // productForm.addEventListener("submit", (e) => {
     productName.classList.remove('is-invalid');
     productDescription.classList.remove('is-invalid');
     productCategory.classList.remove('is-invalid');
@@ -75,17 +73,27 @@ window.addEventListener('load', ()  => {
 
     
 
+    /* DEJAMOS ABAJO DESHABILITADO PARCIALMENTE PORQUE SI SE HABILITA, NO FUNCIONAN LAS VALIDACIONES DE BACKEND.
+    DEJAMOS HABILITADA SOLO LA VALIDACION DE IMAGEN EN EL FRONT PARA FRENAR EL FORMULARIO Y EL RESTO SE VALIDA 
+    TAMBIEN EN EL BACKEND.
+    EL CODIGO ANDA BIEN. SIMPLEMENTE DESCOMENTAR Y LISTO. */
+    
+    
     productForm.addEventListener("submit", (e) => {
-        if (productName.value == "" || productName.value.length < 5
+        if (productImage.value == ""
+            || productImage.value.length < 5
+ /*           || productName.value == ""
+            || productName.value.length < 5
             || productDescription.value.length < 20
             || productCategory.value == ""
             || productPrice.value == ""
-            || productImage.value == "") {
+*/
+                ) {
             e.preventDefault();
-            return alert('Por favor, revisa los errores en el formulario');
+            return alert('Por favor, subir entre 1 y 4 imagenes (frontend validation)');
         
         }   else {  
             e.submit()       
-    }   
-});
+            }   
+    }); 
 });

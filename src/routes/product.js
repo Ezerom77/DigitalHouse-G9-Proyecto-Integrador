@@ -20,33 +20,34 @@ const storage = multer.diskStorage({
 
 const uploadFile = multer ({storage: storage});
 
-// Form validations
+// Form validations (Backend)
 const validations = [
     body('productName')
-        .notEmpty().withMessage('El nombre del producto es obligatorio').bail()
-        .isLength({min: 5}).withMessage('El nombre del producto debe tener al menos 5 caracteres'),
+        .notEmpty().withMessage('El nombre del producto es obligatorio (Backend)').bail()
+        .isLength({min: 5}).withMessage('El nombre del producto debe tener al menos 5 caracteres (Backend)'),
     body('productDescription')
-        .isLength({min: 20}).withMessage('La descripción del producto debe tener al menos 20 caracteres'),
+        .notEmpty().withMessage('La descripción del producto es obligatoria (Backend)').bail()
+        .isLength({min: 20}).withMessage('La descripción del producto debe tener al menos 20 caracteres (Backend)'),
     body('categorias')
-        .notEmpty().withMessage('Debes seleccionar al menos una categoría'),
+        .notEmpty().withMessage('Debes seleccionar al menos una categoría (Backend)'),
     body('talle')
-        .notEmpty().withMessage('Debes seleccionar al menos un talle'),
+        .notEmpty().withMessage('Debes seleccionar al menos un talle (Backend)'),
     body('color')
-        .notEmpty().withMessage('Debes seleccionar al menos un color'),
+        .notEmpty().withMessage('Debes seleccionar al menos un color (Backend)'),
     body('productPrice')
-        .notEmpty().withMessage('Debes ingresar el precio del producto'),
-    body('productImage')
-        .notEmpty().withMessage('Debes ingresar al menos una imagen del producto')
-        .custom((value, {req}) => {
-            let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
-            if(acceptedExtensions.includes(path.extname(file.originalname))){
-            return 'true'; // return "non-falsy" value to indicate valid data"
-            }else{
-            return false; // return "falsy" value to indicate invalid data
-            }
-        }).withMessage('Solo se aceptan archivos jpeg, jpg, png y pdf'),
-
+        .notEmpty().withMessage('Debes ingresar el precio del producto (Backend)'),
+    //body('productImage')
+      //  .notEmpty().withMessage('Debes seleccionar una imagen (Backend)')
 ];
+
+
+
+
+
+
+
+
+
 
 // Routes
 // Get all products
@@ -62,7 +63,7 @@ router.get("/detail/:id", productController.detail);
 
 // Edit an existing product
 router.get("/edit/:id", productController.edit);
-router.put('/edit/:id', productController.update);
+router.put("/edit/:id", validations, productController.update);
 
 //Delete an existing product
 router.delete("/edit/:id", productController.delete);
