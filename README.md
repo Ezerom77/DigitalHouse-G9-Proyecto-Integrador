@@ -1,4 +1,57 @@
 # DigitalHouse-G9-Proyecto-Integrador
+## Sprint 8 - 30/5/2022
+### _Entregables_
+
+- Repositorio del DASHBOARD en REACT [link](https://github.com/amuslera/dh-sprint8-dashboard-React)
+
+Paneles Simples:
+
+* Total de usuarios
+* Total de productos
+* Total de categorías
+
+Paneles con datos:
+
+* Ultimo usuario creado  (Con sus datos más relevantes)
+* Ultimo producto creado (Con sus datos más relevantes)
+* Categorías (con su nombre y con la cantidad de productos relacionados a la misma)
+* Listado de productos (con sus datos mas relevantes)
+
+#### Implementacio de una API con los siguientes servicios:
+ Heroku FRONT Original [link](https://dh-g9-clessidra.herokuapp.com/)
+ - api/users
+    - Devuelve cantidad total de usuarios y array de usuarios completos.
+ - api/products
+    - Devuelve cantidad total de productos y un array con el detallde los productos en BD.
+ - api/categorias
+    - Devielve el total de Categorias.     
+  - api/product/:id
+    - Devuelve detalle del producto pasado por parametro.
+  - api/user/:id
+    - Devuelve detalle del usuario pasado por parametro sin datos sensibles
+  - api/prodXCat
+    - Devuelve el total de productos por categoria.
+  
+- Trello actualizado:  [link](https://trello.com/b/U0KKKwLH/sprints)
+
+## Sprint 7 - 11/5/2022
+### _Entregables_
+
+- Heroku [link](https://dh-g9-clessidra.herokuapp.com/)
+- Validar por Javascript (frontend) y por Node js (backend):
+
+  - Formulario de registro de usuario
+  - Formulario de login de usuario
+  - Formulario de creación de producto
+  - Formulario de edición de producto
+- Carrito 
+  - Agregar productos
+  - Eliminar productos
+  - Vaciar carrito
+  - Integración con Mercadopago
+  
+- Trello actualizado:  [link](https://trello.com/b/U0KKKwLH/sprints)
+
 ## Sprint 6 - 25/4/2022
 ### _Entregables_
 
