@@ -30,11 +30,21 @@ const validations = [
     body('userTermsAccept').notEmpty().withMessage("Debes aceptar los términos y condiciones para continuar (Backend)")
 ] ;
 
+//validaciones de formulario de Login
 const loginValidations = [
     body('email')
         .notEmpty().withMessage("* Por favor ingresa tu correo electrónico (Backend)").bail()
         .isEmail().withMessage("* No es un formato de email válido (Backend)"),
     body('password').notEmpty().withMessage("* Por favor ingresa tu contraseña (Backend)")
+]
+
+//validaciones de formulario de Edit Usuario
+const editValidations = [
+    body('userName').notEmpty().withMessage("* Por favor edita tu nombre (Backend)"),
+    body('userLastName').notEmpty().withMessage("* Por favor edita tu apellido (Backend)"),
+    body('userEmail')
+        .notEmpty().withMessage("* Por favor edita tu  correo electrónico (Backend)").bail()
+        .isEmail().withMessage("* No es un formato de email válido (Backend)")
 ]
 
 // Routes
@@ -46,7 +56,7 @@ router.get('/registro', guestMiddleware, userController.registro);
 router.post('/registro', uploadFile.single('profilePic'), validations , userController.store);
 router.post('/logout', userController.logout);
 router.get('/edit',loggedMiddleware, userController.edit)
-router.post('/edit',loggedMiddleware, userController.update)
+router.post('/edit',loggedMiddleware, editValidations, userController.update)
 
 
 // Module export

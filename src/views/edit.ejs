@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <%- include('./partials/head') %>
+    <script src="/js/edit.js"></script>
     <title>Editar</title>
   </head>
 
@@ -23,37 +24,47 @@
         <div class="form-floating">
           <input
             type="text"
-            class="form-control"
+            class="form-control <%= locals.errors && errors.userName ? 'is-invalid' : null %>"
             id="nombre"
             name="userName"
             placeholder="Juan"
-            value="<%= user.nombre %>"
-          />
+            value="<%= user.nombre %>">
           <label for="nombre">Nombre *</label>
+          <% if (locals.errors && errors.userName) { %>
+            <p class="errortext"> <%= errors.userName.msg %> </p>
+          <% } %>
+          <p id="nombreError" class="errortext"></p>
           
         </div>
         <div class="form-floating">
           <input
             type="text"
-            class="form-control"
+            class="form-control <%= locals.errors && errors.userLastName ? 'is-invalid' : null %>"
             id="apellido"
             name="userLastName"
             placeholder="Perez"
-            value="<%= user.apellido %>"
-          />
+            value="<%= user.apellido %>">
           <label for="apellido">Apellido *</label>
+          <% if (locals.errors && errors.userLastName) { %>
+            <p class="errortext"> <%= errors.userLastName.msg %> </p>
+          <% } %>
+          <p id="apellidoError" class="errortext"></p>
+          
           
         </div>
         <div class="form-floating">
           <input
             type="email"
-            class="form-control"
+            class="form-control <%= locals.errors && errors.userEmail ? 'is-invalid' : null %>"
             id="email"
             name="userEmail"
             placeholder="name@example.com"
-            value="<%= user.email %>"
-          />
+            value="<%= user.email %>">
           <label for="email">Correo electrónico *</label>
+          <% if (locals.errors && errors.userEmail) { %>
+            <p class="errortext"> <%= errors.userEmail.msg %> </p>
+          <% } %>
+          <p id="emailError" class="errortext"></p>
       
         </div>
         
