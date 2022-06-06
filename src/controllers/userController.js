@@ -11,7 +11,7 @@ let userController = {
   perfil: (req, res) => {
     if (req.session.user) {
       const loggedUser = req.session.user;
-      res.render("perfil", {
+      res.render("usersProfile", {
         title: "Ya ingresaste! Éstos son tus datos:",
         loggedUser: loggedUser,
       });
@@ -20,10 +20,10 @@ let userController = {
     }
   },
   login: (req, res) => {
-    res.render("login");
+    res.render("usersLogin");
   },
   edit: (req, res) => {
-    res.render("edit", { user: req.session.user });
+    res.render("usersEdit", { user: req.session.user });
   },
 
   update: (req, res) => {
@@ -47,7 +47,7 @@ let userController = {
           });
         })
     } else {
-      res.render("edit", {errors: errors.mapped() , user: req.session.user });
+      res.render("usersEdit", {errors: errors.mapped() , user: req.session.user });
     }
 
 },
@@ -67,19 +67,19 @@ let userController = {
             }
             res.redirect("/users/perfil");
           } else {
-            res.render("login" , { error : "* Credenciales invalidas" });
+            res.render("usersLogin" , { error : "* Credenciales invalidas" });
           }
         }
         else {
-          res.render("login" , { error : "* Credenciales invalidas" , oldData: req.body });
+          res.render("usersLogin" , { error : "* Credenciales invalidas" , oldData: req.body });
         }
       });
     } else {
-      res.render("login", { errors: errors.mapped() , oldData: req.body }); // Error hay campos vacíos
+      res.render("usersLogin", { errors: errors.mapped() , oldData: req.body }); // Error hay campos vacíos
     }
 },
   registro: (req, res) => {
-    res.render("registro");
+    res.render("usersCreate");
   },
   store: (req, res) => {
     let errors = validationResult(req);
@@ -93,9 +93,9 @@ let userController = {
         fecha_creacion: new Date(),
       };
       db.Users.create(newUser);
-      res.render("login")
+      res.render("usersLogin")
     } else {
-      res.render("registro", {errors: errors.mapped() , oldData: req.body });
+      res.render("usersCreate", {errors: errors.mapped() , oldData: req.body });
     }
   },
   logout: (req, res) => {

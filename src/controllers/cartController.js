@@ -38,6 +38,7 @@ const cartController = {
         let datos = {
           id: product.id,
           nombre: product.nombre,
+          descripcion: product.descripcion,
           precio: product.precio,
           color: product.color.descripcion,
           talle: product.talle.descripcion,
@@ -91,9 +92,9 @@ const cartController = {
           }
         ],
         back_urls: {
-          success: "http://localhost:3000/cart/end",
-          failure: "http://localhost:3000/cart/end",
-          pending: "http://localhost:3000/cart/end"
+          success: "http://dh-g9-clessidra.herokuapp.com/cart/end",
+          failure: "http://dh-g9-clessidra.herokuapp.com/cart/end",
+          pending: "http://dh-g9-clessidra.herokuapp.com/cart/end"
         }
       };
       mercadopago.preferences.create(preference)
